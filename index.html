@@ -14,7 +14,7 @@ body, html {
 }
 
 /* Create a Parallax Effect */
-.bgimg-1, .bgimg-2, .bgimg-3 {
+.bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4 {
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -39,12 +39,17 @@ body, html {
     min-height: 400px;
 }
 
+.bgimg-4 {
+    background-image: url("media/titulo.jpg");
+    min-height: 400px;
+}
+
 .w3-wide {letter-spacing: 10px;}
 .w3-hover-opacity {cursor: pointer;}
 
 /* Turn off parallax scrolling for tablets and phones */
 @media only screen and (max-device-width: 1024px) {
-    .bgimg-1, .bgimg-2, .bgimg-3 {
+    .bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4 {
         background-attachment: scroll;
     }
 }
@@ -63,6 +68,10 @@ body, html {
     <li class="w3-hide-small"><a href="#about"><i class="fa fa-user"></i> SOBRE MI</a></li>
     <li class="w3-hide-small"><a href="#portfolio"><i class="fa fa-th"></i> TERAPIAS</a></li>
     <li class="w3-hide-small"><a href="#contact"><i class="fa fa-envelope"></i> CONTACTO</a></li>
+	</li>
+	<li class="w3-hide-small">
+	<a href="http://www.fb.me/psicologaelectra" target="blank" class="w3-hover-text-blue" title="Facebook"><i class="fa fa-facebook-official w3-hover-text-indigo"></i> FACEBOOK</a>
+	
 
   </ul>
 
@@ -72,6 +81,9 @@ body, html {
       <li><a href="#about" onclick="toggleFunction()">SOBRE MI</a></li>
       <li><a href="#portfolio" onclick="toggleFunction()">TERAPIAS</a></li>
       <li><a href="#contact" onclick="toggleFunction()">CONTACTO</a></li>
+	  
+	  
+	  <li><a href="http://www.fb.me/psicologaelectra" target="blank" onclick="toggleFunction()">FACEBOOK</a></li>
 
     </ul>
   </div>
@@ -85,11 +97,11 @@ body, html {
 </div>
 
 <!-- Container (About Section) -->
-<div class="w3-content w3-container w3-padding-64" id="about">
+<div class="w3-content w3-container w3-padding-64 w3-white" id="about">
   <h3 class="w3-center">SOBRE MI</h3>
   <p class="w3-center"><em>Lic. Electra Huguet – Psicóloga Clínica</em></p>
   <p>Mi nombre es Electra Huguet y soy Licenciada en Psicología, egresada de la Facultad de Psicología de la Universidad de la República. 
-Realizo psicoterapia en forma individual y ademas también tengo formación especializada para trabajar en terapia de pareja y terapia familiar desde un abordaje sistémico.
+Realizo psicoterapia en forma individual y ademas tengo formación especializada para trabajar en terapia de pareja y terapia familiar desde un abordaje sistémico.
 
 </p>
   <div class="w3-row">
@@ -103,12 +115,19 @@ Realizo psicoterapia en forma individual y ademas también tengo formación especi
       <p>
 	  Realice posgrado en drogodependencias  y tengo una vasta experiencia laboral, en el Hospital Central de las FF.AA. en la policlínica de Consumo Problemático de Sustancias. 
 <br/><br/>
-Soy encargada y docente del curso de Prevención del Suicidio de la E.S.FF.AA.  y a su vez, estoy a cargo de la sala psiquiátrica del Hospital Militar, lo cual me ha permitido adquirir una gran experiencia en el abordaje de pacientes con diferentes trastornos psiquiátricos, con ideas suicidas y con intentos de autoeliminación. 
+Soy coordinadora y docente del curso de Prevención del Suicidio de la E.S.FF.AA.  y a su vez, estoy a cargo de la sala psiquiátrica del Hospital Militar, lo cual me ha permitido adquirir una gran experiencia en el abordaje de pacientes con diferentes trastornos psiquiátricos, con ideas suicidas y con intentos de autoeliminación. 
 <br/><br/>
 Me especialice para realizar procesos de Orientación Vocacional Ocupacional, tanto con jóvenes como con adultos, en forma individual o grupal. 
 	  </p>
     </div>
   </div>
+  
+  
+    <h3 class="w3-center">En el tratamiento te brindo un espacio para encontrar respuestas y buscar soluciones a tu problemática, conociendo tus recursos personales y promoviendo cambios favorables.</h3>
+
+</p>
+  
+  
   <p class="w3-large w3-center w3-padding-16">Mis fuertes son:</p>
   <p class="w3-wide"><i class="fa fa-camera"></i>Terapia de pareja</p>
   <div class="w3-progress-container">
@@ -126,24 +145,37 @@ Me especialice para realizar procesos de Orientación Vocacional Ocupacional, tan
   <div class="w3-progress-container">
     <div class="w3-progressbar" style="width:90%"></div>
   </div>
+  <br/><br/>
+      <h3 class="w3-center">Desde mi consulta te ofrezco tratamientos psicológicos adecuados a la demanda y necesidades de cada caso. Construyendo un espacio de escucha y orientación en el que trabajaremos juntos para conseguir tus objetivos.</h3>
+<br/><br/>
+  
 </div>
+
+
+
+
+<div class="bgimg-4 w3-display-container ">
+  <div class="w3-display-middle">
+  </div>
+</div>
+
 
 <div class="w3-row w3-center w3-dark-grey w3-padding-16">
   <div class="w3-quarter w3-section">
-    <span class="w3-xlarge">14+</span><br>
-    Partners
+    <span class="w3-xlarge">10+</span><br>
+    Años de experiencia
   </div>
   <div class="w3-quarter w3-section">
-    <span class="w3-xlarge">55+</span><br>
-    Projects Done
+    <span class="w3-xlarge">12000+</span><br>
+    Horas de atencion
   </div>
   <div class="w3-quarter w3-section">
-    <span class="w3-xlarge">89+</span><br>
-    Happy Clients
+    <span class="w3-xlarge">500+</span><br>
+    Pacientes
   </div>
   <div class="w3-quarter w3-section">
-    <span class="w3-xlarge">150+</span><br>
-    Meetings
+    <span class="w3-xlarge">20+</span><br>
+    Cursos de actualizacion
   </div>
 </div>
 
@@ -166,7 +198,7 @@ Me especialice para realizar procesos de Orientación Vocacional Ocupacional, tan
         </div>
 
         <div class="w3-justify">
-          <img src="media/pareja.jpg" alt="Girl Hat" style="width:100%" class="w3-padding-12">
+          <img src="media/pareja.png" alt="Girl Hat" style="width:100%" class="w3-padding-12">
           <p>En las relaciones de pareja se pueden vivir distintos problemas los cuales nos afectan negativamente y generan malestar, como por ejemplo: dificultades en la comunicación, en el entendimiento, o en la sexualidad,  distanciamiento, infidelidad, violencia física o psicológica, o el fin de la relación.  
 		  Sea cual sea la problemática, es importante, que si no es posible resolverla o superarla  uno mismo, se acuda a buscar ayuda profesional y realizar un tratamiento psicoterapéutico. 
 		  <strong>Busca ayuda y mejora tu malestar emocional!</strong></p>
@@ -247,6 +279,10 @@ Con frecuencia llegan a mi consultorio adolescentes planteando diferentes motivo
 <!-- Contact Section -->
 <div class="w3-container w3-padding-128 w3-light-grey" id="contact">
   <h3 class="w3-center">Recuerde que la consulta oportuna es el primer paso hacia la salud emocional.</h3>
+  <h2 class="w3-center">La consulta a tiempo puede mejorar significativamente tu calidad de vida y la de tu familia.</h3>
+  
+  
+  
   <p class="w3-center w3-large">Puedes conectarte conmigo para pedir información, sin ningún compromiso, sobre los servicios y terapias que realizo.
   <br/>
   No dudes en llamarme o escribirme, para agendar tu primera consulta. 
@@ -272,7 +308,7 @@ Con frecuencia llegan a mi consultorio adolescentes planteando diferentes motivo
 <!-- Footer -->
 <footer class="w3-center w3-black w3-padding-64  w3-hover-opacity-off">
   <div class="w3-xlarge w3-section">
-    <i class="fa fa-facebook-official w3-hover-text-indigo"></i>
+    <a href="http://www.fb.me/psicologaelectra" target="blank" class="w3-hover-text-red" title="Facebook"><i class="fa fa-facebook-official w3-hover-text-indigo"></i></a>
 	<a href="#home" class="w3-hover-text-red" title="Go to top"><i class="fa fa-arrow-up"></i></a>
   </div>
   <p>Powered by <a href="http://www.starkgarage.com" title="Starkgarage" target="_blank" class="w3-hover-text-green">Starkgarage</a></p>
