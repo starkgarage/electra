@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+Ôªø<!DOCTYPE html>
 <html>
 <title>Electra psicologia</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -6,393 +6,495 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
 <style>
-body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
-body, html {
-    height: 100%;
-    color: #777;
-    line-height: 1.8;
-}
-
-/* Create a Parallax Effect */
-.bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4 {
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-/* First image (Logo. Full height) */
-.bgimg-1 {
-    background-image: url('media/paisaje.jpg');
-    min-height: 100%;
-}
-
-/* Second image (Portfolio) */
-.bgimg-2 {
-    background-image: url("media/paisaje2.jpg");
-    min-height: 400px;
-}
-
-/* Third image (Contact) */
-.bgimg-3 {
-    background-image: url("media/coffee.jpg");
-    min-height: 400px;
-}
-
-.bgimg-4 {
-    background-image: url("media/titulo.jpg");
-    min-height: 400px;
-}
-
-.w3-wide {letter-spacing: 10px;}
-.w3-hover-opacity {cursor: pointer;}
-
-/* Turn off parallax scrolling for tablets and phones */
-@media only screen and (max-device-width: 1024px) {
-    .bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4 {
-        background-attachment: scroll;
+    body, h1, h2, h3, h4, h5, h6 {
+        font-family: "Lato", sans-serif;
     }
-}
+
+    body, html {
+        height: 100%;
+        color: #777;
+        line-height: 1.8;
+    }
+
+    /* Create a Parallax Effect */
+    .bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4 {
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    /* First image (Logo. Full height) */
+    .bgimg-1 {
+        background-image: url('media/paisaje.jpg');
+        min-height: 100%;
+    }
+
+    /* Second image (Portfolio) */
+    .bgimg-2 {
+        background-image: url("media/paisaje2.jpg");
+        min-height: 400px;
+    }
+
+    /* Third image (Contact) */
+    .bgimg-3 {
+        background-image: url("media/coffee.jpg");
+        min-height: 400px;
+    }
+
+    .bgimg-4 {
+        background-image: url("media/titulo.jpg");
+        min-height: 400px;
+    }
+
+    .w3-wide {
+        letter-spacing: 10px;
+    }
+
+    .w3-hover-opacity {
+        cursor: pointer;
+    }
+
+    /* Turn off parallax scrolling for tablets and phones */
+    @media only screen and (max-device-width: 1024px) {
+        .bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4 {
+            background-attachment: scroll;
+        }
+    }
 </style>
 <body>
 
 <!-- Navbar (sit on top) -->
 <div class="w3-top w3-black">
-  <ul class="w3-navbar" id="myNavbar">
-    <li class="w3-hide-medium w3-hide-large w3-opennav w3-right">
-      <a class="w3-hover-black" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
-        <i class="fa fa-bars"></i>
-      </a>
-    </li>
-    <li class="w3-left-align"><a href="#home">HOME</a></li>
-    <li class="w3-hide-small"><a href="#about"><i class="fa fa-user"></i> SOBRE MI</a></li>
-    <li class="w3-hide-small"><a href="#portfolio"><i class="fa fa-th"></i> TERAPIAS</a></li>
-    <li class="w3-hide-small"><a href="#contact"><i class="fa fa-envelope"></i> CONTACTO</a></li>
-	</li>
-	<li class="w3-hide-small">
-	<a href="http://www.fb.me/psicologaelectra" target="blank" class="w3-hover-text-blue" title="Facebook"><i class="fa fa-facebook-official w3-hover-text-indigo"></i> FACEBOOK</a>
-	
+    <ul class="w3-navbar" id="myNavbar">
+        <li class="w3-hide-medium w3-hide-large w3-opennav w3-right">
+            <a class="w3-hover-black" href="javascript:void(0);" onclick="toggleFunction()"
+               title="Toggle Navigation Menu">
+                <i class="fa fa-bars"></i>
+            </a>
+        </li>
+        <li class="w3-left-align"><a href="#home">HOME</a></li>
+        <li class="w3-hide-small"><a href="#about"><i class="fa fa-user"></i> SOBRE MI</a></li>
+        <li class="w3-hide-small"><a href="#portfolio"><i class="fa fa-th"></i> TERAPIAS</a></li>
+        <li class="w3-hide-small"><a href="#contact"><i class="fa fa-envelope"></i> CONTACTO</a></li>
+        </li>
+        <li class="w3-hide-small">
+            <a href="http://www.fb.me/psicologaelectra" target="blank" class="w3-hover-text-blue" title="Facebook"><i
+                    class="fa fa-facebook-official w3-hover-text-indigo"></i> FACEBOOK</a>
 
-  </ul>
-
-  <!-- Navbar on small screens -->
-  <div id="navDemo" class="w3-hide w3-hide-large w3-hide-medium">
-    <ul class="w3-navbar w3-left-align w3-white">
-      <li><a href="#about" onclick="toggleFunction()">SOBRE MI</a></li>
-      <li><a href="#portfolio" onclick="toggleFunction()">TERAPIAS</a></li>
-      <li><a href="#contact" onclick="toggleFunction()">CONTACTO</a></li>
-	  
-	  
-	  <li><a href="http://www.fb.me/psicologaelectra" target="blank" onclick="toggleFunction()">FACEBOOK</a></li>
 
     </ul>
-  </div>
+
+    <!-- Navbar on small screens -->
+    <div id="navDemo" class="w3-hide w3-hide-large w3-hide-medium">
+        <ul class="w3-navbar w3-left-align w3-white">
+            <li><a href="#about" onclick="toggleFunction()">SOBRE MI</a></li>
+            <li><a href="#portfolio" onclick="toggleFunction()">TERAPIAS</a></li>
+            <li><a href="#contact" onclick="toggleFunction()">CONTACTO</a></li>
+
+
+            <li><a href="http://www.fb.me/psicologaelectra" target="blank" onclick="toggleFunction()">FACEBOOK</a></li>
+
+        </ul>
+    </div>
 </div>
 
 <!-- First Parallax Image with Logo Text -->
 <div class="bgimg-1 w3-display-container " id="home">
-  <div class="w3-display-middle" style="white-space:nowrap;color:black;">
-    <span class="w3-center w3-padding-xlarge  w3-xxlarge w3-wide w3-animate-opacity">Electra <span class="w3-hide-small">Psicologia</span> 	</span>
-  </div>
+    <div class="w3-display-middle" style="white-space:nowrap;color:black;">
+        <span class="w3-center w3-padding-xlarge  w3-xxlarge w3-wide w3-animate-opacity">Electra <span
+                class="w3-hide-small">Psicologia</span> 	</span>
+    </div>
 </div>
 
 <!-- Container (About Section) -->
 <div class="w3-content w3-container w3-padding-64 w3-white" id="about">
-  <h3 class="w3-center">SOBRE MI</h3>
-  <p class="w3-center"><em>Lic. Electra Huguet ñ PsicÛloga ClÌnica</em></p>
-  <p>Mi nombre es Electra Huguet y soy Licenciada en PsicologÌa, egresada de la Facultad de PsicologÌa de la Universidad de la Rep˙blica. 
-Realizo psicoterapia en forma individual y ademas tengo formaciÛn especializada para trabajar en terapia de pareja y terapia familiar desde un abordaje sistÈmico.
+    <h3 class="w3-center">SOBRE MI</h3>
+    <p class="w3-center"><em>Lic. Electra Huguet ‚Äì Psic√≥loga Cl√≠nica</em></p>
+    <p>Mi nombre es Electra Huguet y soy Licenciada en Psicolog√≠a, egresada de la Facultad de Psicolog√≠a de la
+        Universidad de la Rep√∫blica.
+        Realizo psicoterapia en forma individual y ademas tengo formaci√≥n especializada para trabajar en terapia de
+        pareja y terapia familiar desde un abordaje sist√©mico.
 
-</p>
-  <div class="w3-row">
-    <div class="w3-col m6 w3-center w3-padding-large">
-<br>
-      <img src="media/psicologa.jpg" class="w3-round w3-image  w3-hover-opacity-off" alt="Photo of Me" width="500" height="333">
+    </p>
+    <div class="w3-row">
+        <div class="w3-col m6 w3-center w3-padding-large">
+            <br>
+            <img src="media/psicologa.jpg" class="w3-round w3-image  w3-hover-opacity-off" alt="Photo of Me" width="500"
+                 height="333">
+        </div>
+
+        <!-- Hide this text on small devices -->
+        <div class="w3-col m6 w3-hide-small w3-padding-large">
+            <p>
+                Realice posgrado en drogodependencias y tengo una vasta experiencia laboral, en el Hospital Central de
+                las FF.AA. en la policl√≠nica de Consumo Problem√°tico de Sustancias.
+                <br/><br/>
+                Soy coordinadora y docente del curso de Prevenci√≥n del Suicidio de la E.S.FF.AA. y a su vez, estoy a
+                cargo de la sala psiqui√°trica del Hospital Militar, lo cual me ha permitido adquirir una gran
+                experiencia en el abordaje de pacientes con diferentes trastornos psiqui√°tricos, con ideas suicidas y
+                con intentos de autoeliminaci√≥n.
+                <br/><br/>
+                Me especialice para realizar procesos de Orientaci√≥n Vocacional Ocupacional, tanto con j√≥venes como con
+                adultos, en forma individual o grupal.
+            </p>
+        </div>
     </div>
 
-    <!-- Hide this text on small devices -->
-    <div class="w3-col m6 w3-hide-small w3-padding-large">
-      <p>
-	  Realice posgrado en drogodependencias  y tengo una vasta experiencia laboral, en el Hospital Central de las FF.AA. en la policlÌnica de Consumo Problem·tico de Sustancias. 
-<br/><br/>
-Soy coordinadora y docente del curso de PrevenciÛn del Suicidio de la E.S.FF.AA.  y a su vez, estoy a cargo de la sala psiqui·trica del Hospital Militar, lo cual me ha permitido adquirir una gran experiencia en el abordaje de pacientes con diferentes trastornos psiqui·tricos, con ideas suicidas y con intentos de autoeliminaciÛn. 
-<br/><br/>
-Me especialice para realizar procesos de OrientaciÛn Vocacional Ocupacional, tanto con jÛvenes como con adultos, en forma individual o grupal. 
-	  </p>
-    </div>
-  </div>
-  
-  
-    <h3 class="w3-center">En el tratamiento te brindo un espacio para encontrar respuestas y buscar soluciones a tu problem·tica, conociendo tus recursos personales y promoviendo cambios favorables.</h3>
 
-</p>
-  
-  
-  <p class="w3-large w3-center w3-padding-16">Mis fuertes son:</p>
-  <p class="w3-wide"><i class="fa fa-camera"></i>Terapia de pareja</p>
-  <div class="w3-progress-container">
-    <div class="w3-progressbar" style="width:90%"></div>
-  </div>
-  <p class="w3-wide"><i class="fa fa-laptop"></i>NiÒos</p>
-  <div class="w3-progress-container">
-    <div class="w3-progressbar" style="width:85%"></div>
-  </div>
-  <p class="w3-wide"><i class="fa fa-photo"></i>Adultos</p>
-  <div class="w3-progress-container">
-    <div class="w3-progressbar" style="width:95%"></div>
-  </div>
-    <p class="w3-wide"><i class="fa fa-photo"></i>Adolescentes</p>
-  <div class="w3-progress-container">
-    <div class="w3-progressbar" style="width:90%"></div>
-  </div>
-  <br/><br/>
-      <h3 class="w3-center">Desde mi consulta te ofrezco tratamientos psicolÛgicos adecuados a la demanda y necesidades de cada caso. Construyendo un espacio de escucha y orientaciÛn en el que trabajaremos juntos para conseguir tus objetivos.</h3>
-<br/><br/>
-  
+    <h3 class="w3-center">En el tratamiento te brindo un espacio para encontrar respuestas y buscar soluciones a tu
+        problem√°tica, conociendo tus recursos personales y promoviendo cambios favorables.</h3>
+
+    </p>
+
+
+    <p class="w3-large w3-center w3-padding-16">Mis fuertes son:</p>
+    <p class="w3-wide"><i class="fa fa-heart"></i>Terapia de pareja</p>
+    <div class="w3-progress-container">
+        <div class="w3-progressbar" style="width:90%"></div>
+    </div>
+    <p class="w3-wide"><i class="fa fa-child"></i>Ni√±os</p>
+    <div class="w3-progress-container">
+        <div class="w3-progressbar" style="width:85%"></div>
+    </div>
+    <p class="w3-wide"><i class="fa fa-user"></i>Adultos</p>
+    <div class="w3-progress-container">
+        <div class="w3-progressbar" style="width:95%"></div>
+    </div>
+    <p class="w3-wide"><i class="fa fa-users"></i>Adolescentes</p>
+    <div class="w3-progress-container">
+        <div class="w3-progressbar" style="width:90%"></div>
+    </div>
+    <br/><br/>
+    <h3 class="w3-center">Desde mi consulta te ofrezco tratamientos psicol√≥gicos adecuados a la demanda y necesidades de
+        cada caso. Construyendo un espacio de escucha y orientaci√≥n en el que trabajaremos juntos para conseguir tus
+        objetivos.</h3>
+    <br/><br/>
+
 </div>
 
 
-
-
 <div class="bgimg-4 w3-display-container ">
-  <div class="w3-display-middle">
-  </div>
+    <div class="w3-display-middle">
+    </div>
 </div>
 
 
 <div class="w3-row w3-center w3-dark-grey w3-padding-16">
-  <div class="w3-quarter w3-section">
-    <span class="w3-xlarge">10+</span><br>
-    AÒos de experiencia
-  </div>
-  <div class="w3-quarter w3-section">
-    <span class="w3-xlarge">12000+</span><br>
-    Horas de atencion
-  </div>
-  <div class="w3-quarter w3-section">
-    <span class="w3-xlarge">500+</span><br>
-    Pacientes
-  </div>
-  <div class="w3-quarter w3-section">
-    <span class="w3-xlarge">20+</span><br>
-    Cursos de actualizacion
-  </div>
+    <div class="w3-quarter w3-section">
+        <span class="w3-xlarge">10+</span><br>
+        A√±os de experiencia
+    </div>
+    <div class="w3-quarter w3-section">
+        <span class="w3-xlarge">12000+</span><br>
+        Horas de atencion
+    </div>
+    <div class="w3-quarter w3-section">
+        <span class="w3-xlarge">500+</span><br>
+        Pacientes
+    </div>
+    <div class="w3-quarter w3-section">
+        <span class="w3-xlarge">20+</span><br>
+        Cursos de actualizacion
+    </div>
 </div>
 
 <!-- Second Parallax Image with Portfolio Text -->
 <div class="bgimg-2 w3-display-container ">
-  <div class="w3-display-middle">
-    <span class="w3-xxlarge w3-text-light-grey w3-wide">TERAPIAS</span>
-  </div>
+    <div class="w3-display-middle">
+        <span class="w3-xxlarge w3-text-light-grey w3-wide">TERAPIAS</span>
+    </div>
 </div>
 
 <!-- Container (Portfolio Section) -->
 <div class="w3-content w3-container w3-padding-64" id="portfolio">
-<div class="w3-col  ">
-    
-      <!-- Blog entry -->
-      <div class="w3-container w3-white w3-margin w3-padding-large">
-        <div class="w3-center">
-          <h3>TERAPIA DE PAREJA</h3>
-          <h5 style="font-style: italic;">"Ser una pareja perfecta, no significa no tener problemas, sino saber superarlos juntos"</h5>
+    <div class="w3-col  ">
+
+        <!-- Blog entry -->
+        <div class="w3-container w3-white w3-margin w3-padding-large">
+            <div class="w3-center">
+                <h3>TERAPIA DE PAREJA</h3>
+                <h5 style="font-style: italic;">"Ser una pareja perfecta, no significa no tener problemas, sino saber
+                    superarlos juntos"</h5>
+            </div>
+
+            <div class="w3-justify">
+                <img src="media/pareja.png" alt="Girl Hat" style="width:100%" class="w3-padding-12">
+                <p>En las relaciones de pareja se pueden vivir distintos problemas los cuales nos afectan negativamente
+                    y generan malestar, como por ejemplo: dificultades en la comunicaci√≥n, en el entendimiento, o en la
+                    sexualidad, distanciamiento, infidelidad, violencia f√≠sica o psicol√≥gica, o el fin de la relaci√≥n.
+                    Sea cual sea la problem√°tica, es importante, que si no es posible resolverla o superarla uno mismo,
+                    se acuda a buscar ayuda profesional y realizar un tratamiento psicoterap√©utico.
+                    <strong>Busca ayuda y mejora tu malestar emocional!</strong></p>
+
+            </div>
+        </div>
+        <hr>
+
+        <!-- Blog entry -->
+        <div class="w3-container w3-white w3-margin w3-padding-large">
+            <div class="w3-center">
+                <h3>TERAPIA CON NI√ëOS</h3>
+                <h5 style="font-style: italic;">"Las infancias nunca duran. Pero todo el mundo se merece una"</h5>
+            </div>
+
+            <div class="w3-justify">
+                <img src="media/ninos.jpg" alt="Men in Hats" style="width:100%" class="w3-padding-12">
+                <p>Los ni√±os se encuentran inmersos en una etapa de aprendizajes y de permanentes cambios (tanto a nivel
+                    f√≠sico como psicol√≥gicos) y donde su entorno familiar incide favorable o desfavorablemente, sobre su
+                    salud emocional. Durante su desarrollo pueden presentar peque√±as alteraciones que terminan por
+                    resolverse cuando ellos son capaces de emplear sus propios recursos, y muchas veces guiados por la
+                    ayuda de los adultos. En otras ocasiones, las dificultades permanecen y generan malestar en los
+                    ni√±os, y preocupaci√≥n y/o angustia en los padres y en la familia, en esos casos es recomendable la
+                    valoraci√≥n y tratamiento con un psic√≥logo infantil, que ayude al ni√±o, apoye y oriente a los padres.
+                    Tambi√©n se aconseja acudir a consulta cuando existe una situaci√≥n de estr√©s a nivel familiar
+                    (conflictos de pareja, dificultades econ√≥micas, muerte de seres queridos, separaci√≥n o divorcio de
+                    los padres, situaciones de violencia intrafamiliar, etc.), en casos de acoso escolar o cibern√©tico,
+                    abuso sexual, etc Son muchos los casos por los cuales se puede necesitar consultar a un psic√≥logo,
+                    <strong>lo importante es que cuando nos damos cuenta de que existe un problema, consultar en la
+                        brevedad.</strong></p>
+
+            </div>
+        </div>
+        <hr>
+        <!-- Blog entry -->
+        <div class="w3-container w3-white w3-margin w3-padding-large">
+            <div class="w3-center">
+                <h3>TERAPIA CON ADOLESCENTES</h3>
+                <h5 style="font-style: italic;">"Contar a un adolescente los hechos de la vida es como dar a un pez un
+                    ba√±o"</h5>
+            </div>
+
+            <div class="w3-justify">
+                <img src="media/adolescentes.jpg" alt="Runway" style="width:100%" class="w3-padding-12">
+                <p>La adolescencia es una etapa ‚Äúbisagra‚Äù entre la infancia y la adultez, y con frecuencia a los padres
+                    se le dificulta el trato con sus hijos, debido a que no se los puede tratar como ni√±os, ni tampoco
+                    exigirle como adultos.
+                    Es un per√≠odo dif√≠cil de transitar debido a que implica muchos cambios (biol√≥gicos, fisiol√≥gicos,
+                    psicol√≥gicos y sociales) y donde la persona debe atravesar varios duelos: el duelo por la p√©rdida
+                    del cuerpo infantil, la p√©rdida de los padres ‚Äúidealizados‚Äù de la ni√±ez y la disyuntiva de tener que
+                    elegir por s√≠ mismo, y la b√∫squeda de una identidad propia lo que implica tambi√©n la p√©rdida de la
+                    dependencia de sus figuras parentales.
+                    Con frecuencia llegan a mi consultorio adolescentes planteando diferentes motivos de consulta:
+                    timidez, problemas de relacionamiento, aislamiento, baja autoestima, inseguridad, bullying,
+                    problemas de conducta, auto agresividad o hetero agresividad, impulsividad, adicci√≥n a las drogas,
+                    depresi√≥n, trastornos alimenticios, etc. El primer paso al cambio es reconocer cuando existe un
+                    problema y que muchas veces solo no podemos solucionarlo, y para lo cual es necesario la ayuda de un
+                    profesional que brinde asistencia y las orientaciones oportunas para un desarrollo √≥ptimo y
+                    saludable.
+                </p>
+
+            </div>
         </div>
 
-        <div class="w3-justify">
-          <img src="media/pareja.png" alt="Girl Hat" style="width:100%" class="w3-padding-12">
-          <p>En las relaciones de pareja se pueden vivir distintos problemas los cuales nos afectan negativamente y generan malestar, como por ejemplo: dificultades en la comunicaciÛn, en el entendimiento, o en la sexualidad,  distanciamiento, infidelidad, violencia fÌsica o psicolÛgica, o el fin de la relaciÛn.  
-		  Sea cual sea la problem·tica, es importante, que si no es posible resolverla o superarla  uno mismo, se acuda a buscar ayuda profesional y realizar un tratamiento psicoterapÈutico. 
-		  <strong>Busca ayuda y mejora tu malestar emocional!</strong></p>
+        <hr>
+        <!-- Blog entry -->
+        <div class="w3-container w3-white w3-margin w3-padding-large">
+            <div class="w3-center">
+                <h3>TERAPIA CON ADULTOS</h3>
+                <h5 style="font-style: italic;">"No dejas de re√≠r porque te haces mayor. Te haces mayor porque dejas de
+                    re√≠r"</h5>
+            </div>
 
-        </div>
-      </div>
-      <hr>
+            <div class="w3-justify">
+                <img src="media/adultos.jpg" alt="Runway" style="width:100%" class="w3-padding-12">
+                <p>Muchas veces en la vida nos enfrentamos a diferentes dificultades que solucionamos poniendo en marcha
+                    nuestras estrategias de resoluci√≥n de problemas personales, con nuestros recursos internos y con la
+                    ayuda del entorno (familia, amigos, compa√±eros de trabajo, etc). Pero existen situaciones con alto
+                    nivel de mal estar y sufrimiento que necesitamos del apoyo y orientaci√≥n de un profesional, y es en
+                    ese momento en que es recomendable acudir a un psic√≥logo para afrontar y resolver dicha situaci√≥n y
+                    para que no contin√∫e afectando nuestra vida cotidiana y nuestras relaciones con los otros. Tambi√©n
+                    podemos necesitar contenci√≥n y orientaci√≥n ante situaciones en las que nos somos capaces de
+                    identificar cu√°les son los recursos adecuados para resolverlas y enfrentarlas. </p>
 
-      <!-- Blog entry -->
-      <div class="w3-container w3-white w3-margin w3-padding-large">
-        <div class="w3-center">
-          <h3>TERAPIA CON NI—OS</h3>
-          <h5 style="font-style: italic;">"Las infancias nunca duran. Pero todo el mundo se merece una"</h5>
-        </div>
-
-        <div class="w3-justify">
-          <img src="media/ninos.jpg" alt="Men in Hats" style="width:100%" class="w3-padding-12">
-          <p>Los niÒos se encuentran inmersos en una etapa de aprendizajes y de permanentes cambios (tanto a nivel fÌsico como psicolÛgicos) y donde su entorno familiar incide favorable o desfavorablemente, sobre su salud emocional. Durante su desarrollo pueden presentar pequeÒas alteraciones que terminan por resolverse cuando ellos son capaces de emplear sus propios recursos, y muchas veces guiados por la ayuda de los adultos. En otras ocasiones, las dificultades permanecen y generan malestar en los  niÒos, y preocupaciÛn y/o angustia en los padres y en la familia, en esos casos es recomendable la valoraciÛn y tratamiento con un psicÛlogo infantil, que ayude al niÒo, apoye y oriente a los padres. TambiÈn se aconseja acudir a consulta cuando existe una situaciÛn de estrÈs a nivel familiar (conflictos de pareja, dificultades econÛmicas, muerte de seres queridos, separaciÛn o divorcio de los padres, situaciones de violencia intrafamiliar, etc.), en casos de acoso escolar o cibernÈtico, abuso sexual, etc Son muchos los casos por los cuales se puede necesitar consultar a un psicÛlogo, <strong>lo importante es que cuando nos damos cuenta de que existe un problema, consultar en la brevedad.</strong></p>
-
-        </div>
-      </div>
-<hr>
-      <!-- Blog entry -->
-      <div class="w3-container w3-white w3-margin w3-padding-large">
-        <div class="w3-center">
-          <h3>TERAPIA CON ADOLESCENTES</h3>
-          <h5 style="font-style: italic;">"Contar a un adolescente los hechos de la vida es como dar a un pez un baÒo"</h5>
+            </div>
         </div>
 
-        <div class="w3-justify">
-          <img src="media/adolescentes.jpg" alt="Runway" style="width:100%" class="w3-padding-12">
-          <p>La adolescencia es una etapa ìbisagraî entre la infancia y la adultez, y con frecuencia a los padres se le dificulta el trato con sus hijos, debido a que no se los puede tratar como niÒos, ni tampoco exigirle como adultos.
-Es un perÌodo difÌcil de transitar debido a que implica muchos cambios (biolÛgicos, fisiolÛgicos, psicolÛgicos y sociales) y donde la persona debe atravesar varios duelos: el duelo por la pÈrdida del cuerpo infantil, la pÈrdida de los padres ìidealizadosî de la niÒez y la disyuntiva de tener que elegir por sÌ mismo, y la b˙squeda de una identidad propia lo que implica tambiÈn la pÈrdida de la dependencia de sus figuras parentales.
-Con frecuencia llegan a mi consultorio adolescentes planteando diferentes motivos de consulta: timidez, problemas de relacionamiento, aislamiento, baja autoestima, inseguridad, bullying, problemas de conducta, auto agresividad o hetero agresividad, impulsividad, adicciÛn a las drogas, depresiÛn, trastornos alimenticios, etc. El primer paso al cambio es reconocer cuando existe un problema y que muchas veces solo no podemos solucionarlo, y para lo cual es necesario la ayuda de un profesional que brinde asistencia y las orientaciones oportunas para un desarrollo Ûptimo y saludable.
-</p>
-          
-        </div>
-      </div>
-	  
-	  <hr>
-      <!-- Blog entry -->
-      <div class="w3-container w3-white w3-margin w3-padding-large">
-        <div class="w3-center">
-          <h3>TERAPIA CON ADULTOS</h3>
-          <h5 style="font-style: italic;">"No dejas de reÌr porque te haces mayor. Te haces mayor porque dejas de reÌr"</h5>
+        <hr>
+
+
+        <div class="w3-container w3-white w3-margin w3-padding-large">
+            <div class="w3-center">
+                <h1>¬øEn qu√© consiste la psicoterapia?</h1>
+            </div>
+
+            <div class="w3-justify">
+                <p>La psicoterapia es el tratamiento que tiene como objetivo el cambio de pensamientos, sentimientos y
+                    conductas del paciente buscando mejorar su estado emocional.
+                    <br/><br/>
+                    La persona que llega a terapia (cualquiera sea la naturaleza de sus s√≠ntomas psicol√≥gicos), se
+                    encuentra en un estado de desmoralizaci√≥n, generalmente caracterizado por baja autoestima,
+                    sentimientos de incompetencia, desvalimiento y desesperanza. Estos sentimientos y sensaci√≥n de
+                    incompetencia subjetiva, deja a la persona sinti√©ndose incapaz de afrontar y resolver los
+                    conflictos, o demandas de su entorno, gener√°ndole malestar y frustraci√≥n. Este malestar se
+                    manifiesta con frecuencia a trav√©s de ansiedad, depresi√≥n, estr√©s, conflictos con la pareja, o
+                    laborales, dificultades en las relaciones sexuales, o dan lugar a ciertos comportamientos que
+                    afectan la vida de las personas en diferentes √°reas, como por ejemplo: las adicciones (al juego,
+                    alcohol y otras drogas), o los referidos a la alimentaci√≥n (bulimia, anorexia nerviosa, etc). En
+                    algunos otros casos las personas llegan incluso a tener conductas autoagresivas y/o heteroagresivas,
+                    ideas de muerte, o de suicidio.
+
+                    <br/><br/>
+                    Las circunstancias y motivos que llevan a una persona a consultar y
+                    comenzar psicoterapia son muy diversas, pero lo principal es reconocer
+                    que muchas veces no podemos resolver los problemas solos y
+                    necesitamos de ayuda profesional. La consulta adecuada es el primer paso
+                    para el cambio, pues hay momentos en que necesitamos de un t√©cnico
+                    que nos oriente y conduzca a nuevas oportunidades para aprender modos
+                    diferentes de pensar, sentir y actuar. En definitiva, con el tratamiento
+                    psicoterap√©utico el malestar va desapareciendo y paulatinamente va
+                    dejando lugar a la tranquilidad, felicidad y dominio personal.
+
+                </p>
+
+            </div>
         </div>
 
-        <div class="w3-justify">
-          <img src="media/adultos.jpg" alt="Runway" style="width:100%" class="w3-padding-12">
-          <p>Muchas veces en la vida nos enfrentamos a diferentes dificultades que solucionamos poniendo en marcha nuestras estrategias de resoluciÛn de problemas personales, con nuestros recursos internos y con la ayuda del entorno (familia, amigos, compaÒeros de trabajo, etc). Pero existen situaciones con alto nivel de mal estar y sufrimiento que necesitamos del apoyo y orientaciÛn de un profesional, y es en ese momento en que es recomendable acudir a un psicÛlogo para afrontar y resolver dicha situaciÛn y para que no contin˙e afectando nuestra vida cotidiana y nuestras relaciones con los otros. TambiÈn podemos necesitar contenciÛn y orientaciÛn ante situaciones en las que nos somos capaces de identificar cu·les son los recursos adecuados para resolverlas y enfrentarlas. </p>
-          
-        </div>
-      </div>
-	  
-	  <hr>
-    <!-- END BLOG ENTRIES -->
+        <!-- END BLOG ENTRIES -->
     </div>
-  
+
 </div>
 
 <!-- Modal for full size images on click-->
 <div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
-  <span class="w3-closebtn w3-text-white  w3-hover-opacity-off w3-xxlarge w3-container w3-display-topright" title="Close Modal Image"><i class="fa fa-remove"></i></span>
-  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
-    <img id="img01" class="w3-image">
-    <p id="caption" class=" w3-large"></p>
-  </div>
+    <span class="w3-closebtn w3-text-white  w3-hover-opacity-off w3-xxlarge w3-container w3-display-topright"
+          title="Close Modal Image"><i class="fa fa-remove"></i></span>
+    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+        <img id="img01" class="w3-image">
+        <p id="caption" class=" w3-large"></p>
+    </div>
 </div>
 
 <!-- Third Parallax Image with Portfolio Text -->
 <div class="bgimg-3 w3-display-container ">
-  <div class="w3-display-middle">
-     <span class="w3-xxlarge w3-text-light-grey w3-wide">CONTACTO</span>
-  </div>
+    <div class="w3-display-middle">
+        <span class="w3-xxlarge w3-text-light-grey w3-wide">CONTACTO</span>
+    </div>
 </div>
 
 
 <!-- Contact Section -->
 <div class="w3-container w3-padding-128 w3-light-grey" id="contact">
-  <h3 class="w3-center">Recuerde que la consulta oportuna es el primer paso hacia la salud emocional.</h3>
-  <h2 class="w3-center">La consulta a tiempo puede mejorar significativamente tu calidad de vida y la de tu familia.</h3>
-  
-  
-  
-  <p class="w3-center w3-large">Puedes conectarte conmigo para pedir informaciÛn, sin ning˙n compromiso, sobre los servicios y terapias que realizo.
-  <br/>
-  No dudes en llamarme o escribirme, para agendar tu primera consulta. 
-  <br/>Aranceles accesibles. 
-</p>
-  <div class="w3-row-padding" style="margin-top:64px">
-    <div class="w3-half">
-      <!-- Add Google Maps -->
-      <div id="googleMap"  style="width:100%;height:210px;"></div>
-    </div>  
-    <div class="w3-half">
-      <p><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i> Montevideo, UY</p>
-      <p><i class="fa fa-phone fa-fw w3-xxlarge w3-margin-right"></i> 094 211 694</p>
-      <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i>  <a href="mailto:electra.huguet@gmail.com">electra.huguet@gmail.com</a> </p>
-      <br>
-		
-    </div>
-  </div>
-</div>
+    <h3 class="w3-center">Recuerde que la consulta oportuna es el primer paso hacia la salud emocional.</h3>
+    <h2 class="w3-center">La consulta a tiempo puede mejorar significativamente tu calidad de vida y la de tu
+        familia.</h3>
 
+
+        <p class="w3-center w3-large">Puedes conectarte conmigo para pedir informaci√≥n, sin ning√∫n compromiso, sobre los
+            servicios y terapias que realizo.
+            <br/>
+            No dudes en llamarme o escribirme, para agendar tu primera consulta.
+            <br/>Aranceles accesibles.
+        </p>
+        <div class="w3-row-padding" style="margin-top:64px">
+            <div class="w3-half">
+                <!-- Add Google Maps -->
+                <div id="googleMap" style="width:100%;height:210px;"></div>
+            </div>
+            <div class="w3-half">
+                <p><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i> Montevideo, UY</p>
+                <p><i class="fa fa-phone fa-fw w3-xxlarge w3-margin-right"></i> 094 211 694</p>
+                <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i> <a
+                        href="mailto:electra.huguet@gmail.com">electra.huguet@gmail.com</a></p>
+                <br>
+
+            </div>
+        </div>
+</div>
 
 
 <!-- Footer -->
 <footer class="w3-center w3-black w3-padding-64  w3-hover-opacity-off">
-  <div class="w3-xlarge w3-section">
-    <a href="http://www.fb.me/psicologaelectra" target="blank" class="w3-hover-text-red" title="Facebook"><i class="fa fa-facebook-official w3-hover-text-indigo"></i></a>
-	<a href="#home" class="w3-hover-text-red" title="Go to top"><i class="fa fa-arrow-up"></i></a>
-  </div>
-  <p>Powered by <a href="http://www.starkgarage.com" title="Starkgarage" target="_blank" class="w3-hover-text-green">Starkgarage</a></p>
+    <div class="w3-xlarge w3-section">
+        <a href="http://www.fb.me/psicologaelectra" target="blank" class="w3-hover-text-red" title="Facebook"><i
+                class="fa fa-facebook-official w3-hover-text-indigo"></i></a>
+        <a href="#home" class="w3-hover-text-red" title="Go to top"><i class="fa fa-arrow-up"></i></a>
+    </div>
+    <p>Powered by <a href="http://www.starkgarage.com" title="Starkgarage" target="_blank" class="w3-hover-text-green">Starkgarage</a>
+    </p>
 </footer>
 
 
-<script  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC2BoF3FggtJfmO9seP6Rja8d5GY6I502k" type="text/javascript"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC2BoF3FggtJfmO9seP6Rja8d5GY6I502k"
+        type="text/javascript"></script>
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
 <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
 <script type="text/javascript">
-   (function(){
-      emailjs.init("user_eNWoKjrTSPsoyKm8B6pZQ");
-   })();
+    (function () {
+        emailjs.init("user_eNWoKjrTSPsoyKm8B6pZQ");
+    })();
 </script>
- 
+
 <script>
-<!-- Google Map Location -->
-var myCenter = new google.maps.LatLng(-34.8698681,-56.176505);
+    <!-- Google Map Location -->
+    var myCenter = new google.maps.LatLng(-34.8698681, -56.176505);
 
-function initialize() {
-var mapProp = {
-  center: myCenter,
-  zoom: 13,
-  scrollwheel: false,
-  draggable: false,
-  mapTypeId: google.maps.MapTypeId.ROADMAP
-  };
+    function initialize() {
+        var mapProp = {
+            center: myCenter,
+            zoom: 13,
+            scrollwheel: false,
+            draggable: false,
+            mapTypeId: google.maps.MapTypeId.ROADMAP
+        };
 
-var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+        var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
 
-var marker = new google.maps.Marker({
-  position: myCenter,
-});
+        var marker = new google.maps.Marker({
+            position: myCenter,
+        });
 
-marker.setMap(map);
-}
-
-google.maps.event.addDomListener(window, 'load', initialize);
-
-// Modal Image Gallery
-function onClick(element) {
-  document.getElementById("img01").src = element.src;
-  document.getElementById("modal01").style.display = "block";
-  var captionText = document.getElementById("caption");
-  captionText.innerHTML = element.alt;
-}
-
-// Change style of navbar on scroll
-window.onscroll = function() {myFunction()};
-function myFunction() {
-    var navbar = document.getElementById("myNavbar");
-    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-        navbar.className = "w3-navbar" + " w3-card-2" + " w3-animate-top" + " w3-white";
-    } else {
-        navbar.className = navbar.className.replace(" w3-card-2 w3-animate-top w3-white", "");
+        marker.setMap(map);
     }
-}
 
-// Used to toggle the menu on small screens when clicking on the menu button
-function toggleFunction() {
-    var x = document.getElementById("navDemo");
-    if (x.className.indexOf("w3-show") == -1) {
-        x.className += " w3-show";
-    } else {
-        x.className = x.className.replace(" w3-show", "");
+    google.maps.event.addDomListener(window, 'load', initialize);
+
+    // Modal Image Gallery
+    function onClick(element) {
+        document.getElementById("img01").src = element.src;
+        document.getElementById("modal01").style.display = "block";
+        var captionText = document.getElementById("caption");
+        captionText.innerHTML = element.alt;
     }
-}
 
-
-
-$(function() {
-  $('a[href*="#"]:not([href="#"])').click(function() {
-    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-      var target = $(this.hash);
-      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-      if (target.length) {
-        $('html, body').animate({
-          scrollTop: target.offset().top
-        }, 2000);
-        return false;
-      }
+    // Change style of navbar on scroll
+    window.onscroll = function () {
+        myFunction()
+    };
+    function myFunction() {
+        var navbar = document.getElementById("myNavbar");
+        if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+            navbar.className = "w3-navbar" + " w3-card-2" + " w3-animate-top" + " w3-white";
+        } else {
+            navbar.className = navbar.className.replace(" w3-card-2 w3-animate-top w3-white", "");
+        }
     }
-  });
-});
+
+    // Used to toggle the menu on small screens when clicking on the menu button
+    function toggleFunction() {
+        var x = document.getElementById("navDemo");
+        if (x.className.indexOf("w3-show") == -1) {
+            x.className += " w3-show";
+        } else {
+            x.className = x.className.replace(" w3-show", "");
+        }
+    }
+
+
+    $(function () {
+        $('a[href*="#"]:not([href="#"])').click(function () {
+            if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+                var target = $(this.hash);
+                target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                if (target.length) {
+                    $('html, body').animate({
+                        scrollTop: target.offset().top
+                    }, 2000);
+                    return false;
+                }
+            }
+        });
+    });
 </script>
 
 </body>
